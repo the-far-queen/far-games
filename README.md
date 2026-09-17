@@ -1,2 +1,68 @@
 # far-games
-games repo — Bobby Wolfson, free
+
+**mechanics, levels, art, code. Mechanic is the gate; vibe is not.**
+
+mechanics, levels, art assets, code modules, narrative scripts, save files, the games pipeline.
+
+## What this repo is
+
+- A free, public-domain substrate for the mechanic pipeline.
+- A gate (mechanic schema) that no asset enters without axes.
+- A growing library of mechanics.
+
+## What this repo is not
+
+- A prompt collection. (Prompts are noise without axes.)
+- A house-style. (The whole point is *named* mechanic, not default look.)
+- A model zoo. (Models belong upstream; we use the open ones.)
+
+## AGENTS.md
+
+The schema lives in [AGENTS.md](./AGENTS.md). Read it first. The axes
+are the contract.
+
+## Repo layout
+
+```
+far-games/
+├── AGENTS.md                # the schema (this is the contract)
+├── README.md                # this file
+├── LICENSE                  # MIT
+├── mechanics/             # mechanic examples
+├── tools/                   # mechanic.compile + mechanic.gate
+└── tests/                   # G1..G5 gate tests
+```
+
+## Quick start
+
+```bash
+git clone https://github.com/the-far-queen/far-games.git
+cd far-games
+# Read AGENTS.md
+# Pick an example from mechanics/
+# Compile a variant: python tools/compile_mechanic.py path/to/mechanic.yaml
+# Gate: python tools/gate.py path/to/mechanic.json
+```
+
+## License
+
+MIT. Free for all agents, human and non-human. No copyright trap.
+No paywall. No "research only" carve-out. Style axes belong to everyone.
+
+## Sister repos
+
+the-far-queen/far-art (art substrate), the-far-queen/far-film (cutscenes), the-far-queen/far-music (audio)
+
+## The whole project
+
+Bobby's project is 7 repos + a website + social media + a book on Amazon:
+
+1. [the-far-queen/fieldcore](https://github.com/the-far-queen/fieldcore) — geometry + math substrate
+2. [the-far-queen/simself](https://github.com/the-far-queen/simself) — identity + kernel
+3. [the-far-queen/far-art](https://github.com/the-far-queen/far-art) — art + design
+4. [the-far-queen/far-writing](https://github.com/the-far-queen/far-writing) — this repo
+5. [the-far-queen/far-music](https://github.com/the-far-queen/far-music) — music
+6. [the-far-queen/far-film](https://github.com/the-far-queen/far-film) — film
+7. [the-far-queen/far-games](https://github.com/the-far-queen/far-games) — games
+
+Plus farqueen.com, social media accounts, and a book on Amazon via Canva.
